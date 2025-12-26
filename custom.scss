@@ -1,0 +1,14 @@
+/*-- scss:functions --*/
+@function colorToRGB ($color) {
+  @return "rgb(" + red($color) + ", " + green($color) + ", " + blue($color)+ ")";
+}
+
+/*-- scss:defaults --*/
+$h1-font-size:          1.6rem !default;
+$h4-font-size:          1.2rem !default;
+$headings-font-weight:  500 !default;
+$navbar-bg:             rgb(253,245,230);
+$toc-active-border:     white;
+$footer-bg:             rgb(253,245,230);
+
+/*-- scss:rules --*/

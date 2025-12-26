@@ -1,0 +1,45 @@
+project:
+  type: website
+  output-dir: docs
+  render:
+    - index.qmd
+    - about.qmd
+    - vita.qmd
+    - research.qmd
+    - contact.qmd
+    - impressum.qmd
+
+website:
+  navbar:
+    title: false
+    search: false
+    left:
+      - text: "Frank Schulz-Kindermann"
+        href: index.qmd
+      - text: "Meine Arbeit"
+        href: about.qmd
+      - text: "Vita"
+        href: vita.qmd
+      - text: "Publikationen"
+        href: research.qmd
+      - text: "Kontakt"
+        href: contact.qmd
+        
+  page-footer:
+    left: "© 2025 Frank Schulz-Kindermann"
+    right: 
+      - text: "Impressum"
+        href: impressum.qmd
+  title: "Dr. phil. Frank Schulz-Kindermann"
+
+format:
+  html:
+    theme:
+    - cosmo
+    - custom.scss
+    css: styles.css
+    fontsize: 1.1em
+    toc: false
+
+editor: visual
+
